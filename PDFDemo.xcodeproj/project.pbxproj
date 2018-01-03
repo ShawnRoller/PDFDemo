@@ -8,20 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		7166D3DB1FFC7E7600D87A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166D3DA1FFC7E7600D87A4C /* AppDelegate.swift */; };
-		7166D3DD1FFC7E7600D87A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166D3DC1FFC7E7600D87A4C /* ViewController.swift */; };
 		7166D3E01FFC7E7600D87A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3DE1FFC7E7600D87A4C /* Main.storyboard */; };
 		7166D3E21FFC7E7600D87A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3E11FFC7E7600D87A4C /* Assets.xcassets */; };
 		7166D3E51FFC7E7600D87A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3E31FFC7E7600D87A4C /* LaunchScreen.storyboard */; };
+		7166D3ED1FFC7F0F00D87A4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166D3EC1FFC7F0F00D87A4C /* MainViewController.swift */; };
+		7166D3F31FFC7FD500D87A4C /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166D3F21FFC7FD500D87A4C /* FilesViewController.swift */; };
+		7166D3F51FFC815200D87A4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166D3F41FFC815200D87A4C /* Constants.swift */; };
+		7166D4011FFC8A0100D87A4C /* objective-c-for-swift-developers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3F61FFC8A0000D87A4C /* objective-c-for-swift-developers.pdf */; };
+		7166D4021FFC8A0100D87A4C /* beyond-code.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3F71FFC8A0000D87A4C /* beyond-code.pdf */; };
+		7166D4031FFC8A0100D87A4C /* pro-swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3F81FFC8A0000D87A4C /* pro-swift.pdf */; };
+		7166D4041FFC8A0100D87A4C /* hacking-with-macos.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3F91FFC8A0000D87A4C /* hacking-with-macos.pdf */; };
+		7166D4051FFC8A0100D87A4C /* practical-ios-11.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FA1FFC8A0000D87A4C /* practical-ios-11.pdf */; };
+		7166D4061FFC8A0100D87A4C /* hacking-with-watchos.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FB1FFC8A0000D87A4C /* hacking-with-watchos.pdf */; };
+		7166D4071FFC8A0100D87A4C /* hacking-with-tvos.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FC1FFC8A0100D87A4C /* hacking-with-tvos.pdf */; };
+		7166D4081FFC8A0100D87A4C /* swift-coding-challenges.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FD1FFC8A0100D87A4C /* swift-coding-challenges.pdf */; };
+		7166D4091FFC8A0100D87A4C /* practical-ios-10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FE1FFC8A0100D87A4C /* practical-ios-10.pdf */; };
+		7166D40A1FFC8A0100D87A4C /* server-side-swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FF1FFC8A0100D87A4C /* server-side-swift.pdf */; };
+		7166D40B1FFC8A0100D87A4C /* hacking-with-swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D4001FFC8A0100D87A4C /* hacking-with-swift.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7166D3D71FFC7E7600D87A4C /* PDFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7166D3DA1FFC7E7600D87A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7166D3DC1FFC7E7600D87A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7166D3DF1FFC7E7600D87A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7166D3E11FFC7E7600D87A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7166D3E41FFC7E7600D87A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7166D3E61FFC7E7600D87A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7166D3EC1FFC7F0F00D87A4C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7166D3F21FFC7FD500D87A4C /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		7166D3F41FFC815200D87A4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7166D3F61FFC8A0000D87A4C /* objective-c-for-swift-developers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "objective-c-for-swift-developers.pdf"; sourceTree = "<group>"; };
+		7166D3F71FFC8A0000D87A4C /* beyond-code.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "beyond-code.pdf"; sourceTree = "<group>"; };
+		7166D3F81FFC8A0000D87A4C /* pro-swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "pro-swift.pdf"; sourceTree = "<group>"; };
+		7166D3F91FFC8A0000D87A4C /* hacking-with-macos.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "hacking-with-macos.pdf"; sourceTree = "<group>"; };
+		7166D3FA1FFC8A0000D87A4C /* practical-ios-11.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "practical-ios-11.pdf"; sourceTree = "<group>"; };
+		7166D3FB1FFC8A0000D87A4C /* hacking-with-watchos.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "hacking-with-watchos.pdf"; sourceTree = "<group>"; };
+		7166D3FC1FFC8A0100D87A4C /* hacking-with-tvos.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "hacking-with-tvos.pdf"; sourceTree = "<group>"; };
+		7166D3FD1FFC8A0100D87A4C /* swift-coding-challenges.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "swift-coding-challenges.pdf"; sourceTree = "<group>"; };
+		7166D3FE1FFC8A0100D87A4C /* practical-ios-10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "practical-ios-10.pdf"; sourceTree = "<group>"; };
+		7166D3FF1FFC8A0100D87A4C /* server-side-swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "server-side-swift.pdf"; sourceTree = "<group>"; };
+		7166D4001FFC8A0100D87A4C /* hacking-with-swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "hacking-with-swift.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +80,59 @@
 		7166D3D91FFC7E7600D87A4C /* PDFDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7166D40C1FFC8A1300D87A4C /* Assets */,
+				7166D3F01FFC7F1F00D87A4C /* Model */,
+				7166D3EF1FFC7F1900D87A4C /* View */,
+				7166D3EE1FFC7F1200D87A4C /* Controller */,
 				7166D3DA1FFC7E7600D87A4C /* AppDelegate.swift */,
-				7166D3DC1FFC7E7600D87A4C /* ViewController.swift */,
-				7166D3DE1FFC7E7600D87A4C /* Main.storyboard */,
-				7166D3E11FFC7E7600D87A4C /* Assets.xcassets */,
-				7166D3E31FFC7E7600D87A4C /* LaunchScreen.storyboard */,
 				7166D3E61FFC7E7600D87A4C /* Info.plist */,
 			);
 			path = PDFDemo;
+			sourceTree = "<group>";
+		};
+		7166D3EE1FFC7F1200D87A4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7166D3EC1FFC7F0F00D87A4C /* MainViewController.swift */,
+				7166D3F21FFC7FD500D87A4C /* FilesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7166D3EF1FFC7F1900D87A4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7166D3DE1FFC7E7600D87A4C /* Main.storyboard */,
+				7166D3E31FFC7E7600D87A4C /* LaunchScreen.storyboard */,
+				7166D3E11FFC7E7600D87A4C /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7166D3F01FFC7F1F00D87A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7166D3F41FFC815200D87A4C /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7166D40C1FFC8A1300D87A4C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7166D3F71FFC8A0000D87A4C /* beyond-code.pdf */,
+				7166D3F91FFC8A0000D87A4C /* hacking-with-macos.pdf */,
+				7166D4001FFC8A0100D87A4C /* hacking-with-swift.pdf */,
+				7166D3FC1FFC8A0100D87A4C /* hacking-with-tvos.pdf */,
+				7166D3FB1FFC8A0000D87A4C /* hacking-with-watchos.pdf */,
+				7166D3F61FFC8A0000D87A4C /* objective-c-for-swift-developers.pdf */,
+				7166D3FE1FFC8A0100D87A4C /* practical-ios-10.pdf */,
+				7166D3FA1FFC8A0000D87A4C /* practical-ios-11.pdf */,
+				7166D3F81FFC8A0000D87A4C /* pro-swift.pdf */,
+				7166D3FF1FFC8A0100D87A4C /* server-side-swift.pdf */,
+				7166D3FD1FFC8A0100D87A4C /* swift-coding-challenges.pdf */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +194,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7166D4021FFC8A0100D87A4C /* beyond-code.pdf in Resources */,
 				7166D3E51FFC7E7600D87A4C /* LaunchScreen.storyboard in Resources */,
 				7166D3E21FFC7E7600D87A4C /* Assets.xcassets in Resources */,
+				7166D40A1FFC8A0100D87A4C /* server-side-swift.pdf in Resources */,
 				7166D3E01FFC7E7600D87A4C /* Main.storyboard in Resources */,
+				7166D4061FFC8A0100D87A4C /* hacking-with-watchos.pdf in Resources */,
+				7166D40B1FFC8A0100D87A4C /* hacking-with-swift.pdf in Resources */,
+				7166D4091FFC8A0100D87A4C /* practical-ios-10.pdf in Resources */,
+				7166D4031FFC8A0100D87A4C /* pro-swift.pdf in Resources */,
+				7166D4011FFC8A0100D87A4C /* objective-c-for-swift-developers.pdf in Resources */,
+				7166D4051FFC8A0100D87A4C /* practical-ios-11.pdf in Resources */,
+				7166D4071FFC8A0100D87A4C /* hacking-with-tvos.pdf in Resources */,
+				7166D4041FFC8A0100D87A4C /* hacking-with-macos.pdf in Resources */,
+				7166D4081FFC8A0100D87A4C /* swift-coding-challenges.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7166D3DD1FFC7E7600D87A4C /* ViewController.swift in Sources */,
 				7166D3DB1FFC7E7600D87A4C /* AppDelegate.swift in Sources */,
+				7166D3F31FFC7FD500D87A4C /* FilesViewController.swift in Sources */,
+				7166D3ED1FFC7F0F00D87A4C /* MainViewController.swift in Sources */,
+				7166D3F51FFC815200D87A4C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
