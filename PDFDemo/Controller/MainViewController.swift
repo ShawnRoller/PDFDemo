@@ -8,6 +8,7 @@
 
 import UIKit
 import PDFKit
+import SafariServices
 
 class MainViewController: UIViewController {
 
@@ -18,6 +19,40 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         setupViews()
+        addBarButtonItems()
+    }
+    
+}
+
+//MARK: - Tappers
+extension MainViewController {
+    
+    @objc private func promptForSearch() {
+        
+        let alert = UIAlertController(title: "Search", message: "Enter text to search for.", preferredStyle: .alert)
+        alert.addTextField()
+        let action = UIAlertAction(title: "Search", style: .default) { (action) in
+            guard let text = alert.textFields?.first?.text else { return }
+            guard let match = self.pdfView.document?.findString(text, fromSelection: self.pdfView.highlightedSelections?.first, withOptions: .caseInsensitive) else { return }
+            self.pdfView.go(to: match)
+            self.pdfView.highlightedSelections = [match]
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(action)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @objc private func shareSelection(sender: UIBarButtonItem) {
+        guard let selection = self.pdfView.currentSelection?.attributedString else {
+            let alert = UIAlertController(title: "Attention!", message: "Select some text to share.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        let vc = UIActivityViewController(activityItems: [selection], applicationActivities: nil)
+        vc.popoverPresentationController?.barButtonItem = sender
+        present(vc, animated: true, completion: nil)
     }
     
 }
@@ -47,6 +82,16 @@ extension MainViewController {
         
         self.thumbnailView.layoutMode = .horizontal
         self.thumbnailView.pdfView = self.pdfView
+        self.pdfView.autoScales = true
+        self.pdfView.delegate = self
+    }
+    
+    private func addBarButtonItems() {
+        let back = UIBarButtonItem(barButtonSystemItem: .rewind, target: self.pdfView, action: #selector(PDFView.goToPreviousPage(_:)))
+        let forward = UIBarButtonItem(barButtonSystemItem: .fastForward, target: self.pdfView, action: #selector(PDFView.goToNextPage(_:)))
+        let search = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(MainViewController.promptForSearch))
+        let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(MainViewController.shareSelection(sender:)))
+        self.navigationItem.leftBarButtonItems = [back, forward, search, share]
     }
     
 }
@@ -72,6 +117,17 @@ extension MainViewController {
         if UIDevice.current.userInterfaceIdiom == .pad {
             self.title = book
         }
+    }
+    
+}
+
+// MARK: - PDFViewDelegate
+extension MainViewController: PDFViewDelegate {
+    
+    func pdfViewWillClick(onLink sender: PDFView, with url: URL) {
+        let vc = SFSafariViewController(url: url)
+        vc.modalPresentationStyle = .formSheet
+        present(vc, animated: true, completion: nil)
     }
     
 }
