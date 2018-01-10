@@ -135,6 +135,18 @@ extension MainViewController {
             documentContent.append(spacer)
             documentContent.append(pageContent)
         }
+        
+        // Remove footers and headers
+        let pattern = "www.hackingwithswift.com [0-9]{1,2}"
+        let regex = try? NSRegularExpression(pattern: pattern)
+        let range = NSMakeRange(0, documentContent.string.utf16.count)
+        
+        if let matches = regex?.matches(in: documentContent.string, options: [], range: range) {
+            for match in matches.reversed() {
+                documentContent.replaceCharacters(in: match.range, with: "")
+            }
+        }
+        
         textView.attributedText = documentContent
     }
     
@@ -156,6 +168,7 @@ extension MainViewController {
     public func load(_ book: String) {
         guard let path = Bundle.main.url(forResource: getFilenameFromString(book), withExtension: "pdf") else { fatalError("Could not get PDF file.") }
         guard let document = PDFDocument(url: path) else { fatalError("Could not get PDFDocument")}
+        document.delegate = self
         self.pdfView.document = document
         self.pdfView.goToFirstPage(nil)
         self.loadText()
@@ -173,6 +186,15 @@ extension MainViewController: PDFViewDelegate {
         let vc = SFSafariViewController(url: url)
         vc.modalPresentationStyle = .formSheet
         present(vc, animated: true, completion: nil)
+    }
+    
+}
+
+// MARK: PDFDocumentDelegate
+extension MainViewController: PDFDocumentDelegate {
+    
+    func classForPage() -> AnyClass {
+        return SampleWaterMark.self
     }
     
 }

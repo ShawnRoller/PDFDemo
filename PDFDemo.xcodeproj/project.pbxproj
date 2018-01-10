@@ -25,6 +25,7 @@
 		7166D4091FFC8A0100D87A4C /* practical-ios-10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FE1FFC8A0100D87A4C /* practical-ios-10.pdf */; };
 		7166D40A1FFC8A0100D87A4C /* server-side-swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D3FF1FFC8A0100D87A4C /* server-side-swift.pdf */; };
 		7166D40B1FFC8A0100D87A4C /* hacking-with-swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D4001FFC8A0100D87A4C /* hacking-with-swift.pdf */; };
+		71F6C3AB2006BC37002877AE /* SampleWaterMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6C3AA2006BC37002877AE /* SampleWaterMark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		7166D3FE1FFC8A0100D87A4C /* practical-ios-10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "practical-ios-10.pdf"; sourceTree = "<group>"; };
 		7166D3FF1FFC8A0100D87A4C /* server-side-swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "server-side-swift.pdf"; sourceTree = "<group>"; };
 		7166D4001FFC8A0100D87A4C /* hacking-with-swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "hacking-with-swift.pdf"; sourceTree = "<group>"; };
+		71F6C3AA2006BC37002877AE /* SampleWaterMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWaterMark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				7166D3DE1FFC7E7600D87A4C /* Main.storyboard */,
 				7166D3E31FFC7E7600D87A4C /* LaunchScreen.storyboard */,
 				7166D3E11FFC7E7600D87A4C /* Assets.xcassets */,
+				71F6C3AA2006BC37002877AE /* SampleWaterMark.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6C3AB2006BC37002877AE /* SampleWaterMark.swift in Sources */,
 				7166D3DB1FFC7E7600D87A4C /* AppDelegate.swift in Sources */,
 				7166D3F31FFC7FD500D87A4C /* FilesViewController.swift in Sources */,
 				7166D3ED1FFC7F0F00D87A4C /* MainViewController.swift in Sources */,
